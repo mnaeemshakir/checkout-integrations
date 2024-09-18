@@ -1,0 +1,45 @@
+@import "styles/styleguide/variables.scss";
+@import "styles//styleguide/mixins.scss";
+
+.priceTagRoot {
+  .priceTagMain {
+    overflow: hidden;
+    margin: auto;
+    background-color: $white-color;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    min-height: 202px;
+    margin: 3.5rem auto;
+    position: relative;
+    overflow: visible;
+    @include respond-below(md) {
+      justify-content: center;
+    }
+  }
+  .textLight {
+    font-family: $font-dm-sans;
+    color: $dark-grey-color;
+    font-size: 1.125rem;
+    padding: 0.313rem;
+    margin: 0;
+  }
+  .textDark {
+    font-family: $font-dm-serif-display;
+    color: $primary1-color;
+    font-size: 4rem;
+    margin: 0 0.313rem;
+    text-align: end;
+  }
+  .coupon {
+    position: absolute;
+    right: -5%;
+    top: -10%;
+    display: block;
+    @include respond-below(md) {
+      display: none;
+    }
+  }
+}

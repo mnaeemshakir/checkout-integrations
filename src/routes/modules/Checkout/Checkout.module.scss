@@ -1,0 +1,279 @@
+@import "styles/styleguide/variables.scss";
+@import "styles/styleguide/mixins.scss";
+
+.checkoutRoot {
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: $font-dm-sans;
+
+  .text {
+    font-family: $font-dm-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $aaaaa-font;
+    word-wrap: break-word;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  .mainContainer {
+    background-color: rgba(0, 0, 0, 0.02);
+
+    @include respond-below(md) {
+      display: flex;
+      align-content: baseline;
+    }
+  }
+
+  .leftContainer {
+    @include flex-center-center;
+    background-color: $white-color;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 15px;
+    flex-flow: column;
+
+    @include respond-below(md) {
+      background-color: $white-color;
+      justify-content: center;
+      min-height: 0vh;
+      min-width: 100vw;
+      max-width: 400px;
+    }
+
+    // .imageContainer {
+    //   @include respond-below(md) {
+    //     display: none;
+    //   }
+    // }
+
+    .image {
+      display: block;
+    }
+
+    .imageDark {
+      margin-top: 1.5rem;
+      display: block;
+
+      @include respond-below(md) {
+        display: none;
+      }
+    }
+
+    .imageLight {
+      margin-top: 1.5rem;
+      display: none;
+
+      @include respond-below(md) {
+        display: block;
+      }
+    }
+
+    .badgeContainer {
+      @include respond-below(md) {
+        display: none;
+      }
+
+      .imageSizing {
+        width: 20%;
+        min-width: 150px;
+      }
+    }
+    .swithcContainer{
+      width: 100%;
+    }
+
+    .textContainer {
+      margin: 20px 0;
+      max-width: 100%;
+      padding: 0 15px;
+      .contentContainer {
+        max-width: 400px;
+      }
+
+      .headerContiner {
+        .heading {
+          font-family: $font-dm-serif-display;
+          font-style: normal;
+          font-weight: normal;
+          font-size: $aaaaaaaaa-font;
+          text-align: center;
+          margin: 0;
+        }
+      }
+
+      .descriptionContainer {
+        .itemContainer {
+          display: flex;
+          padding: 3px 0;
+
+          .icon {
+            fill: $primary2-color;
+            margin-right: 1rem;
+          }
+
+          .item {
+            margin-top: -0.625rem;
+            padding: 0;
+          }
+        }
+      }
+
+      .guaranteeText {
+        font-family: $font-dm-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: $aaaa-font;
+        word-wrap: break-word;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .rightContainer {
+    @include flex-center-center;
+
+    @include respond-below(md) {
+      padding: 0 15px;
+    }
+
+    .fromContainer {
+      max-width: 400px;
+      padding: 0 15px;
+    }
+
+    .radioGroup {
+      width: 100%;
+    }
+
+    .topSpacing {
+      padding-top: 10px;
+    }
+
+    .selectionLabel {
+      width: 100%;
+      font-family: $font-dm-sans;
+      padding: 5px 0;
+      @include flex-between-center;
+
+      .labelImage {
+        @include flex-between-center;
+        width: 75px;
+        height: 42px;
+
+        p {
+          font-family: $font-dm-sans;
+        }
+      }
+    }
+
+    .containerSmall {
+      max-width: 100%;
+      @include flex-between-center;
+    }
+
+    .containerCode {
+      max-width: 100%;
+      padding-top: 15px;
+      @include flex-between-center;
+    }
+
+    .field {
+      width: 100%;
+    }
+
+    .fieldMedium {
+      width: 75%;
+
+      @include respond-below(md) {
+        width: 75%;
+      }
+    }
+
+    .fieldSmall {
+      width: 49%;
+
+      @include respond-below(md) {
+        width: 49%;
+      }
+    }
+  }
+
+  .divider {
+    border-bottom: 1px solid $light-grey-color;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    margin: 15px 0;
+  }
+
+  .button {
+    font-family: $font-dm-sans;
+    border-radius: 28px;
+    font-size: $aaaaa-font;
+    font-weight: 700;
+    text-transform: none;
+    height: 3.5rem;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    text-align: center;
+  }
+
+  .marginProgress {
+    margin: 20px;
+  }
+
+  .buttonFullWidth {
+    width: 100%;
+  }
+
+  .footer {
+    font-family: $font-dm-sans;
+    margin: auto;
+    font-size: $aaaa-font;
+    color: $dark-grey-color;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    padding: 8px 20px;
+
+    @include respond-below(md) {
+      max-width: 400px;
+      position: relative;
+    }
+
+    .link {
+      text-decoration: none;
+      color: $primary1-color;
+      text-align: center;
+    }
+  }
+
+  .textfieldRoot {
+    width: 100%;
+    height: 3.125rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid $medium-grey-color !important;
+    box-sizing: border-box;
+    padding: 0.95rem 0.75rem;
+    background-color: $white-color;
+  }
+
+  .dialogButton{
+    text-transform: capitalize;
+  }
+  .dialog{
+    max-width: 700px;
+    .button{
+      text-transform: capitalize;
+    }
+  }
+}

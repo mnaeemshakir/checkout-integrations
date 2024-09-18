@@ -1,0 +1,97 @@
+@import "styles/styleguide/variables.scss";
+@import "styles//styleguide/mixins.scss";
+
+.PriceSwitchRoot {
+  max-width: 450px;
+  .text {
+    font-family: $font-dm-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $aaaaa-font;
+    word-wrap: break-word;
+    color: $black-color;
+  }
+
+  .discountContainer {
+    width: 230px;
+    border-radius: 8px;
+    background-color: $orange-primary-color;
+    padding: 8px 20px;
+    margin: 10px;
+    .discountDetailsText {
+      text-transform: uppercase;
+      color: $white-color;
+      font-size: $aaaa-font;
+      margin:0px;
+    }
+  }
+
+  .toogleContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    .toogleGroupRoot{
+      width: 100%;
+    }
+    .toogleClass{
+      width: 100%;
+      margin:11px;
+      padding:0px;
+      border: 0px;
+      border-radius: 8px;
+      line-height: normal;
+      text-transform: none;
+      background-color: $white-color;
+    }
+    .PriceToogle {
+      border: 1px solid $light-grey-color;
+      border-radius: 8px;
+      max-width: 200px;
+      min-width: 120px;
+      width: 100%;
+      height: 160px;
+
+      .durationText {
+        font-size: $aaaaaa-font;
+        word-wrap: break-word;
+      }
+
+      .discountText {
+        font-size: $aaaa-font;
+        text-decoration-line: line-through;
+        margin: 0px;
+      }
+
+      .priceText {
+        font-size: $aaaaaaa-font;
+        font-weight: 700;
+        margin: 0px;
+      }
+
+      .descriptionText {
+        color: $dark-grey-color;
+        font-size: $aaaa-font;
+      }
+
+      .tagText {
+        position: absolute;
+        color: $white-color;
+        background-color: $light-grey-color;
+        border-radius: 20px;
+        width: 100px;
+        font-size: 10px;
+        margin-top: 152px;
+        text-transform: uppercase;
+        margin-left: calc(50% - 50px);
+      }
+
+      .tagTextSelected {
+        background-color: $primary1-color;
+      }
+    }
+
+    .priceToogleSelected {
+      border: 1px solid $primary1-color;
+    }
+  }
+}

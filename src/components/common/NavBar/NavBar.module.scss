@@ -1,0 +1,154 @@
+@import "styles/styleguide/variables.scss";
+@import "styles/styleguide/mixins.scss";
+
+.navRoot {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  height: 4rem;
+  padding: 0 0.5rem;
+  background: transparent;
+  font-family: $font-dm-sans;
+  @include flex-between-center;
+  .left {
+    .longLogo {
+      display: block;
+    }
+    .shortLogo {
+      display: none;
+    }
+    .logoImage {
+      height: 1.5rem;
+      fill: $black-color;
+      cursor: pointer;
+    }
+    .logoImageWhite {
+      fill: $white-color;
+      cursor: pointer;
+    }
+    @include respond-below(sm) {
+      .longLogo {
+        display: none;
+      }
+      .shortLogo {
+        display: block;
+      }
+      .logoImageWhite {
+        fill: $black-color;
+      }
+      // width: 0 !important;
+      // display: none;
+    }
+  }
+  .right {
+    flex: 1;
+    @include flex-end-center;
+    // @include respond-below(sm) {
+    //   justify-content: center;
+    // }
+    .upperContainer {
+      display: inline-block;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      transition-duration: 0ms;
+      z-index: 1;
+      &:hover {
+        cursor: pointer;
+        margin-top: 46px;
+        .textLight {
+          color: $black-color;
+        }
+        .userIcon {
+          fill: $black-color;
+        }
+        .userContainer {
+          background-color: $white-color;
+          border: 1px solid $dark-grey-color;
+          border-bottom: 0px;
+          &:hover {
+            background-color: $light-grey-color;
+          }
+        }
+        .logoutContainer {
+          display: block;
+          background-color: $white-color;
+          &:hover {
+            background-color: $light-grey-color;
+          }
+        }
+      }
+    }
+    .loginContainer {
+      cursor: pointer;
+      .loginfont {
+        font-family: $font-dm-sans;
+        font-size: $aaa-font;
+        font-weight: 700;
+      }
+    }
+    .textLight {
+      color: $white-color;
+      line-height: 0.8rem;
+      font-weight: $heavy-weight;
+      cursor: inherit;
+      @include respond-below(sm) {
+        color: $black-color;
+      }
+    }
+    .textDark {
+      line-height: 0.8rem;
+      cursor: inherit;
+      font-weight: $heavy-weight;
+      color: $black-color;
+    }
+    .userContainer {
+      @include flex-start-center;
+      padding: 0 15px;
+      border: 1px solid $transparent-color;
+      border-bottom: 0px;
+      border-radius: 0.5rem 0.5rem 0 0;
+      transition-duration: 0ms;
+      .userIcon {
+        fill: $white-color;
+        margin-right: 1rem;
+        transition-duration: 0ms;
+        @include respond-below(sm) {
+          fill: $black-color;
+        }
+      }
+      .userIconDark {
+        margin-right: 1rem;
+        fill: $black-color;
+      }
+    }
+    .logoutContainer {
+      padding: 0 15px;
+      display: none;
+      border: 1px solid $dark-grey-color;
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .languageButton {
+      margin-left: 15px;
+    }
+  }
+  .langBtn {
+    font-family: $font-dm-sans;
+    color: $white-color;
+    font-size: $aaa-font;
+    font-weight: $heavy-weight;
+    @include respond-below(sm) {
+      color: $black-color;
+    }
+  }
+  .langBtnBlack {
+    font-family: $font-dm-sans;
+    color: $black-color;
+    font-size: $aaa-font;
+    font-weight: $heavy-weight;
+    // @include respond-below(sm) {
+    //   display: none;
+    // }
+  }
+}

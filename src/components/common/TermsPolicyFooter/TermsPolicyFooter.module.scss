@@ -1,0 +1,21 @@
+@import "styles/styleguide/variables.scss";
+@import "styles//styleguide/mixins.scss";
+
+.footer {
+  font-family: $font-dm-sans;
+  margin: auto;
+  font-size: $aa-font;
+  color: $dark-grey-color;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  // position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  padding: 8px;
+  .link {
+    cursor: pointer;
+    text-decoration: none;
+    color: $primary1-color;
+    text-align: center;
+  }
+}

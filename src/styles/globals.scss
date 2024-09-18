@@ -1,0 +1,39 @@
+@import "./styleguide/variables.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-montserrat;
+  background-color: white !important;
+  a {
+    color: inherit;
+  }
+
+  * {
+    box-sizing: border-box;
+    transition: 0.1s ease-in-out;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $white-border;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    box-shadow: 0 0 0px 1000px #fff inset;
+  }
+}

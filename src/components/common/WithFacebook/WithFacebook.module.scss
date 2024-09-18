@@ -1,0 +1,29 @@
+@import "styles/styleguide/variables.scss";
+@import "styles//styleguide/mixins.scss";
+.withFacrbookRoot {
+  @include respond-below(xs) {
+    width: 100%;
+  }
+  .button {
+    @include button-common-style;
+  }
+  .outlined {
+    color: $black-color;
+    border: 1px solid $black-color;
+  }
+  .facebookBackgrond {
+    background-color: $facebook-bg-color;
+    color: $white-color;
+    &:hover {
+      color: $white-color;
+      background-color: $facebook-bg-color-light;
+    }
+  }
+  .icon {
+    fill: $black-color;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 2rem;
+  }
+}

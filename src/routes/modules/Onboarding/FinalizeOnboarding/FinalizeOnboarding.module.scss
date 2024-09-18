@@ -1,0 +1,54 @@
+@import "styles/styleguide/variables.scss";
+@import "styles/styleguide/mixins.scss";
+
+.root {
+  height: 100%;
+  max-width: 400px;
+  min-width: 350px;
+  align-content: space-between;
+  background-color: $primary2-color;
+  .contentContainer {
+    margin: 1rem 0;
+  }
+  .happinessLevel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .badgeContainer {
+    max-width: 400px;
+    min-width: 300px;
+  }
+  .heading {
+    font-family: $font-dm-serif-display;
+    font-style: normal;
+    // font-weight: 700;
+    font-size: $aaaaaaa-font;
+    text-align: center;
+    margin: 0;
+  }
+  .text {
+    font-family: $font-dm-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $aaaaa-font;
+    word-wrap: break-word;
+    text-align: center;
+    // width: 100%;
+    margin: 0;
+  }
+  .textDark {
+    color: $white-color;
+  }
+  .textLight {
+    color: $light1-color;
+  }
+  .progressBar {
+    padding: 5px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: $light1-color;
+  }
+  .bar {
+    background-color: white;
+  }
+}

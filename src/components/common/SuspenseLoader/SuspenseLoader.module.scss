@@ -1,0 +1,70 @@
+@import "../../../styles/styleguide/variables.scss";
+@import "../../../styles/styleguide/mixins.scss";
+
+@mixin lds-root() {
+  width: 100vw;
+  height: 100vh;
+  @include flex-center-center;
+}
+@mixin lds-ring() {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+}
+@mixin lds-ring-div() {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+.lds-ring-root {
+  @include lds-root;
+}
+.lds-ring {
+  @include lds-ring;
+
+  div {
+    @include lds-ring-div;
+    border: 8px solid black;
+    border-color: black transparent transparent transparent;
+    color: black;
+  }
+}
+
+.lds-ring-root-white {
+  background-color: $primary1-color;
+  @include lds-root;
+}
+.lds-ring-white {
+  @include lds-ring;
+
+  div {
+    @include lds-ring-div;
+    border: 8px solid white;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: white transparent transparent transparent;
+    color: white;
+  }
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

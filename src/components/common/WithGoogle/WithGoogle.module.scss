@@ -1,0 +1,21 @@
+@import "styles/styleguide/variables.scss";
+@import "styles//styleguide/mixins.scss";
+.withGoogleRoot {
+  @include respond-below(xs) {
+    width: 100%;
+  }
+  .button {
+    @include button-common-style;
+  }
+  .outlined {
+    color: $black-color;
+    border: 1px solid $black-color;
+  }
+  .icon {
+    fill: $black-color;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 2rem;
+  }
+}

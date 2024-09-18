@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/",
+    "component": "Root",
+    "exact": true
+  },
+  {
+    "path": "/page-not-found",
+    "component": "PageNotFound"
+  },
+  {
+    "path": "/auth/:flowType",
+    "component": "Auth",
+    "navVariant": "light",
+    "exact": true
+  },
+  {
+    "path": "/auth/:flowType/:form",
+    "component": "Auth",
+    "navVariant": "light"
+  },
+  {
+    "path": "/home",
+    "component": "Checkout",
+    "navVariant": "light"
+  },
+  {
+    "path": "/get-started",
+    "component": "GettingStarted",
+    "navVariant": "light"
+  },
+  {
+    "path": "/success",
+    "component": "Success",
+    "navVariant": "light"
+  },
+  {
+    "path": "/onboarding",
+    "component": "Onboarding",
+    "navVariant": "light"
+  },
+  {
+    "path": "/login-success",
+    "component": "OnboardingSuccess",
+    "navVariant": "light"
+  }
+]

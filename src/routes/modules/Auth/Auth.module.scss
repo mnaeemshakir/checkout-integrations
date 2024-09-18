@@ -1,0 +1,37 @@
+@import 'styles/styleguide/variables.scss';
+@import 'styles//styleguide/mixins.scss';
+
+.authRoot {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  .heading {
+    color: $black-color;
+    margin: $big-spacing;
+    font-size: $aaaa-font;
+  }
+  .button {
+    @include flex-start-center;
+    background: #ffffff;
+    border: 1px solid $black-color;
+    border-radius: 28px;
+    color: $black-color;
+    font-size: $aaa-font;
+    font-weight: $bold-weight;
+    text-transform: none;
+    padding: 0.625rem;
+    width: 95%;
+    height: 3.5rem;
+  }
+  .icon {
+    fill: $black-color;
+    margin: 0 1.5625rem;
+  }
+  .label {
+    margin: auto;
+  }
+  .textBlue {
+    color: $primary1-color;
+    font-size: $aaa-font;
+  }
+}

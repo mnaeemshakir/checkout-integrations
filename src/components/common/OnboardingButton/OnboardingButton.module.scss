@@ -1,0 +1,38 @@
+@import "styles/styleguide/variables.scss";
+@import "styles/styleguide/mixins.scss";
+
+.onboardingButton {
+  border-radius: 8px;
+  border: 1px solid $medium-grey-color;
+  font-family: $font-dm-sans;
+  font-size: $aaaaaa-font;
+  text-transform: none;
+  height: 3.5rem;
+  outline: none;
+  position: relative;
+  text-align: left;
+  width: 400px;
+  min-width: 350px;
+  height: 60px;
+  justify-content: space-between;
+  padding-left: 18px;
+  margin: 5px;
+  @include respond-below(sm) {
+    text-transform: none;
+  }
+  .contained {
+    background-color: $primary1-color;
+    color: $white-color !important;
+    border: none !important;
+    font-weight: normal;
+  }
+  .icon {
+    max-height: 60px;
+  }
+  .iconRounded {
+    border-radius: 0 8px 8px 0;
+  }
+}
+.iconFullWidth {
+  padding-right: 0;
+}

@@ -1,0 +1,108 @@
+@import "styles/styleguide/variables.scss";
+@import "styles/styleguide/mixins.scss";
+
+.successRoot {
+  // overflow: scroll;
+  height: 100%;
+  width: 100vw;
+  // min-height: 100vh;
+  font-family: $font-dm-sans;
+  .contentContainer {
+    @include flex-center-center;
+    min-width: 100vw;
+    height: 100%;
+    .mainContainer {
+      height: 100%;
+      // height: 100vh;
+      display: flex;
+      align-content: space-between;
+      .contentSpacing {
+        padding: 20px 0;
+      }
+      .contentWidth {
+        max-width: 350px;
+      }
+      .imageContainer {
+        @include flex-center-center;
+        margin: 1rem 0;
+        color: $white-color;
+        width: 100%;
+        .imageLight {
+          min-width: 300px;
+        }
+      }
+      .heading {
+        font-family: $font-dm-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: $aaaaaaaaa-font;
+        text-align: center;
+        margin: 0;
+      }
+      .text {
+        font-family: $font-dm-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $aaaaaa-font;
+        word-wrap: break-word;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+      }
+      .textCenter {
+        text-align: center;
+        width: 100%;
+      }
+      .textBold {
+        font-weight: bold;
+        line-height: 120%;
+      }
+      .textLight {
+        color: $dark-grey-color;
+      }
+      .badgeContainer {
+        justify-content: space-between;
+      }
+      .smallImageContainer {
+        width: 45%;
+        min-width: 150px;
+      }
+      .imageSizing {
+        cursor: pointer;
+        width: 100%;
+        min-width: 140px;
+        max-width: 175px;
+      }
+      .buttonContainer {
+        @include flex-center-center;
+        margin: 15px 0;
+        .textBlue {
+          font-family: $font-dm-sans;
+          color: $primary1-color;
+          font-size: $aaaa-font;
+          font-family: $font-dm-sans;
+          cursor: pointer;
+          text-align: center;
+          font-weight: 700;
+          width: 300px;
+        }
+      }
+      .button {
+        font-family: $font-dm-sans;
+        border-radius: 28px;
+        font-size: $aaaaa-font;
+        font-weight: 700;
+        text-transform: none;
+        height: 3.5rem;
+        box-shadow: none;
+        outline: none;
+        position: relative;
+        text-align: center;
+      }
+      .buttonFullWidth {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  }
+}

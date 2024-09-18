@@ -1,0 +1,105 @@
+@import "styles/styleguide/variables.scss";
+@import "styles//styleguide/mixins.scss";
+
+.signupRoot {
+  @include flex-center-center;
+  .signupDivider {
+    @include flex-center-center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    .signupForm {
+      @include flex-center-center;
+      min-height: 80vh;
+    }
+  }
+
+  .heading {
+    font-family: $font-dm-sans;
+    color: $black-color;
+    font-size: $aaaaaaa-font;
+    text-align: center;
+  }
+  .buttonContainer {
+    @include flex-center-center;
+  }
+  .button {
+    @include button-common-style;
+  }
+  .outlined {
+    color: $black-color;
+    border: 1px solid $black-color;
+  }
+  .contained {
+    background-color: $primary1-color;
+    color: $white-color !important;
+    border: none !important;
+    font-weight: normal;
+  }
+  .icon {
+    fill: $black-color;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 2rem;
+  }
+  .facebookBackgrond {
+    background-color: $facebook-bg-color;
+    color: $white-color;
+    &:hover {
+      color: $white-color;
+      background-color: $facebook-bg-color-light;
+    }
+  }
+  .label {
+    margin: auto;
+    text-align: center;
+  }
+  .textBlue {
+    font-family: $font-dm-sans;
+    color: $primary1-color;
+    font-size: $aaaa-font;
+    font-family: $font-dm-sans;
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+  }
+  .fieldContainer {
+    @include flex-center-center;
+  }
+  .field {
+    width: 100%;
+    max-width: 400px;
+    height: 3.125rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid $medium-grey-color !important;
+    box-sizing: border-box;
+    padding: 0.75rem;
+  }
+
+  ::placeholder {
+    font-family: $font-dm-sans;
+    font-style: normal;
+    font-weight: $heavy-weight;
+    font-size: $aaaaa-font;
+    color: $dark-grey-color;
+  }
+}
+.footer {
+  font-family: $font-dm-sans;
+  margin: auto;
+  font-size: $aa-font;
+  color: $dark-grey-color;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  // position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  padding: 8px;
+
+  .link {
+    text-decoration: none;
+    color: $primary1-color;
+    text-align: center;
+  }
+}

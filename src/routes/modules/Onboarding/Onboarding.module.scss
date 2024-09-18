@@ -1,0 +1,78 @@
+@import "styles/styleguide/variables.scss";
+@import "styles/styleguide/mixins.scss";
+
+.onboardingRoot {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  .backContiner {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 4rem;
+    padding: 0 2rem;
+    margin-top: 4rem;
+    background: transparent;
+    @include respond-below(sm) {
+      padding: 0 0.5rem;
+    }
+    .backButton {
+      cursor: pointer;
+    }
+  }
+  .container {
+    margin: 4rem 0 0 0;
+    color: $black-color;
+    min-width: 300px;
+    align-content: start;
+    // @include respond-below(sm) {
+    //   margin: 4rem 0;
+    //   color: $black-color;
+    // }
+    .loadingContainer {
+      display: flex;
+    }
+  }
+}
+.happinessIndex {
+  max-width: 400px;
+  .subtitleContainer {
+    margin-bottom: 40px;
+  }
+  .heading {
+    font-family: $font-dm-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $aaaaaaa-font;
+    text-align: center;
+    margin: 0;
+  }
+  .text {
+    font-family: $font-dm-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $aaaaa-font;
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  .textDark {
+    color: $dark-grey-color;
+  }
+  .badgeContainer {
+    max-width: 400px;
+    min-width: 300px;
+    margin: 4rem 0;
+    .imageSizing {
+      width: 20%;
+      // min-width: 150px;
+    }
+    .imageClass {
+      cursor: pointer;
+    }
+  }
+}
+.finalizeOnboarding {
+  background-color: $primary2-color;
+}

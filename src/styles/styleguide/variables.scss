@@ -1,0 +1,92 @@
+@import './fonts.scss';
+
+// colors
+$full-black-color: #000000;
+$dark-gray-color: #222222;
+$white-color: #ffffff;
+$black-tint-color: rgba(0, 0, 0, 0.8);
+$gray-tint-color: rgba(0, 0, 0, 0.4);
+$transparent-color: rgba(0, 0, 0, 0.0);
+
+$primary1-color: #008196;
+$primary2-color: #5fc6c4;
+$light1-color: #a7e3e2;
+$light2-color: #cfeeed;
+
+$black-color: #1b2645;
+$dark-grey-color: #85878c;
+$medium-grey-color: #c2c2c2;
+$light-grey-color: #e7e7e7;
+$white-color: #ffffff;
+
+$yellow-primary1-color: #ffd04d;
+$yellow-light1-color: #ffe394;
+$yellow-light2-color: #fff1ca;
+
+$error-color: #e64543;
+$orange-primary-color: #ff7640;
+$orange-light-color: #ff7640;
+
+$coaching-bg-color: #ff7640;
+$coaching-bg-light-color: #ff7640;
+
+$facebook-bg-color:#415993;
+$facebook-bg-color-light:#415a93cc;
+
+
+//sizes
+$nav-height: 4.5rem;
+$footer-height: 3rem;
+$headerControls-height: 3rem;
+$poster-height: 550px;
+$poster-width: 360px;
+
+$blur-radius: 0.5rem;
+
+$a-font: 0.5rem; // 8px
+$aa-font: 0.75rem; // 12px
+$aaa-font: 0.8rem; // 12.8px
+$aaaa-font: 0.87rem; // 14px
+$aaaaa-font: 1rem; // 16px 
+$aaaaaa-font: 1.2rem; // 18px 
+$aaaaaaa-font: 1.38rem; // 22px 
+$aaaaaaaa-font: 1.5rem; // 24px
+$aaaaaaaaa-font: 1.75rem; // 28px
+$aaaaaaaaaa-font: 2rem; // 32px
+$aaaaaaaaaaa-font: 3rem; // 48px
+$giant-font: 4rem; // 64px
+
+//fonts
+$font-montserrat: 'Montserrat', sans-serif;
+$font-dm-serif-display: 'DM Serif Display', sans-serif;
+$font-dm-sans: 'DM Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$font-cabin: 'Cabin', sans-serif;
+
+//spacings
+$thiner-spacing: 0.5rem;
+$thin-spacing: 1rem;
+$normal-spacing: 1.5rem;
+$thick-spacing: 2rem;
+$big-spacing: 4rem;
+
+//responsiveness
+$breakpoints: (
+  xs: 500px,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px,
+);
+
+// weights
+$semi-bold-weight: 500;
+$bold-weight: 600;
+$heavy-weight: 700;
+$light-weight: 200;
+
+// borders
+$gray-border: 1px solid $dark-gray-color;
+$white-border: 0.5rem solid $white-color;
+
